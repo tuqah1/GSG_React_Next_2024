@@ -1,0 +1,25 @@
+.dashboard-wrapper {
+    border: 1px solid #86A788;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items {
+    border-radius: 10px;
+    background-color: #f8f6e6;
+    height: 50px;
+    padding: 10px;
+     font-size: 18px;
+}
+.items span{
+    color: #86A788;
+    font-weight: bold;
+   
+    
+}
+.items b {
+    color: #fe8989;
+    
+}

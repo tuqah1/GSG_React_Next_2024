@@ -1,0 +1,11 @@
+body{
+  background-color: #FFE2E2;
+}
+.app-wrapper{
+  padding: 15px ;
+  margin: 0 auto;
+  align-items: center;
+  width: 500px;
+  background-color: #FFFDEC;
+  
+}
