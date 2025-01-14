@@ -1,12 +1,13 @@
 import "./form.css"
 import { ITtodoItem } from "../../types";
+import React from "react";
 
 interface Iprops{
     onSubmit:(item:ITtodoItem) => void
 }
-const Form =(props:Iprops)=>{
+const Form = React.memo((props:Iprops)=>{
 
-
+    //  console.log("re render morm")
     const handleSubmit =(e:React.FormEvent<HTMLFormElement>)=>{
       e.preventDefault();
       const title:string =e.currentTarget["task"].value
@@ -32,6 +33,6 @@ const Form =(props:Iprops)=>{
             <input type="submit" value="Add Todo" className="submit"/>
         </form>
     )
-}
+})
 
 export default Form

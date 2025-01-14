@@ -1,12 +1,20 @@
 import "./dashboard.css"
 import { ITtodoItem } from "../../types";
+import { useMemo } from "react";
 interface Iprops{
 items: ITtodoItem[];
     
 }
 const Dashboard =(props:Iprops) =>{
+   // console.log("Re render dashboard")
+   
     const urgentCount=props.items.filter(item => item.isUrgent).length
-    const completeCount=props.items.filter(item => item.isDone).length
+   //  const completeCount= props.items.filter(item => item.isDone).length
+    const completeCount = useMemo(()=>{
+      // console.log("calc comlete")
+      return props.items.filter(item => item.isDone).length
+    },[props.items])
+    
     return(
         <div className="dashboard-wrapper">
          <div className="items">
