@@ -1,0 +1,37 @@
+.absents-filter {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+    /* background: white; */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .filter-input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #FAC67A;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .filter-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
